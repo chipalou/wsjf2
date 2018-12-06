@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
     <style>
       select { height: 30px; }
@@ -8,10 +9,8 @@
   </head>
   <body>
     <div class="content" id="content">
-      
- <div id="warning" style="color:red"></div>
-    
-      <label for="ubv">User business value</label>
+      <div id="warning" style="color:red"></div>
+      <label for="ubv">Valeur Business</label>
       <select name="ubv" id="ubv">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -21,8 +20,7 @@
         <option value="6">13</option>
         <option value="7">21</option>
       </select>
-    
-    <label for="tc">Time criticality</label>
+      <label for="tc">Valeur Client</label>
       <select name="tc" id="tc">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -32,8 +30,7 @@
         <option value="6">13</option>
         <option value="7">21</option>
       </select>
-    
-    <label for="rroe">RR/EO value</label>
+      <label for="rroe">Urgence/Opportunité</label>
       <select name="rroe" id="rroe">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -43,10 +40,9 @@
         <option value="6">13</option>
         <option value="7">21</option>
       </select>
-      
-      <label for="js">Job Size</label>
+      <label for="js">Effort</label>
       <select name="js" id="js">
-       <option value="1">1</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">5</option>
@@ -54,13 +50,13 @@
         <option value="6">13</option>
         <option value="7">21</option>
       </select>
-      <label for="wsjf">WSJF</label>
-      <input id="wsjf" name="wsjf" type="text" placeholder="Save to calculate WSJF" disabled>
-      <button id="save" class="mod-primary">Save</button>
-      <p>
-        Read about <a href="http://www.scaledagileframework.com/wsjf/" target="_new">WSJF in agile</a>.
-      </p>
-   </div>
+      <label for="wsjf">WSJF</label> <input id="wsjf" name="wsjf" placeholder="Calcul WSJF"
+
+        disabled="disabled" type="text"> <button id="save" class="mod-primary">Save</button>
+      <p> Read about <a href="http://www.scaledagileframework.com/wsjf/" target="_new">WSJF
+          in agile</a>. </p>
+    </div>
     <script src="./js/estimate.js"></script>
+    
   </body>
 </html>
