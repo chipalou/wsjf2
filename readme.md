@@ -24,3 +24,4 @@ Here's how to add the WSJF Calculator to your boards:
 - Click Enable
 - Click X in upper, right-hand corner of Power-Ups manager modal
 You're done! Start scoring. 
+Special Thanks to Bill Hennesy for his marvellous input
