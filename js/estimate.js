@@ -22,14 +22,14 @@ document.getElementById('save').addEventListener('click', function(){
     return t.set('card', 'shared',  'js', jsSelector.value)
   })
   .then(function(){
-
-    var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/(jsSelector.value))
-    return t.set('card', 'shared',  'wsjf', wsjfval )
-
+    
+    var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)
+    return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 10000).toFixed(2))
+  
   })
   .then(function(){
-
-
+   
+   
      t.closePopup();
   });
 });
@@ -43,19 +43,20 @@ t.render(function(){
     t.get('card', 'shared', 'rroe'),
     t.get('card', 'shared', 'js'),
     t.get('card', 'shared', 'wsjf'),
-
+    
     ])
   .spread(function(savedUbv, savedTc, savedRroe, savedJs, savedWsjf){
-
+    
      ubvSelector.value = savedUbv;
      tcSelector.value = savedTc;
      rroeSelector.value = savedRroe;
      jsSelector.value = savedJs;
-     wsjfCalc.innerHTML = savedWsjf;
-
+     wsjfCalc.innerHTML = savedWsjf; 
+    
   })
   .then(function(){
     t.sizeTo('#content')
     .done();
   })
 });
+
