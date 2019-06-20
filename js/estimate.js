@@ -41,7 +41,7 @@ document.getElementById('save').addEventListener('click', function(){
         var ubvtemp=13
     }
     if (ubvSelector.value=7)  {
-        var ubvtemp=21  
+        var ubvtemp=32  
     }
     
   /*  var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
