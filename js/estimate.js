@@ -22,12 +22,17 @@ document.getElementById('save').addEventListener('click', function(){
     return t.set('card', 'shared',  'js', jsSelector.value)
   })
   .then(function(){
-   
+  if (ubvSelector.value==1) {
+      var wsjfval= 10
+    } 
+    else {
+      var wsjfval=20
+    }
+    /*var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)*/
+    return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2))
+   /* var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
     
-    
-   var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) 
-    
-   return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2))
+ 
   
   
   })
