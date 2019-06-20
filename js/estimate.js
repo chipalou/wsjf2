@@ -26,7 +26,7 @@ document.getElementById('save').addEventListener('click', function(){
       var wsjfval= 10
     } 
     else {
-    if (ubvSelector=="2") {
+    if (ubvSelector.value=="2") {
       var wsjfval= 20
     } 
       else {
