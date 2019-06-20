@@ -22,7 +22,7 @@ document.getElementById('save').addEventListener('click', function(){
     return t.set('card', 'shared',  'js', jsSelector.value)
   })
   .then(function(){
-  if (ubvSelector.value==1) {
+  if (ubvSelector.value=="1") {
       var wsjfval= 10
     } 
     else {
