@@ -22,9 +22,35 @@ document.getElementById('save').addEventListener('click', function(){
     return t.set('card', 'shared',  'js', jsSelector.value)
   })
   .then(function(){
-    
+      if (ubvSelector.value=1) {
+      var ubvtemp=1
+      
+    } else {if (ubvSelector.value=2) {
+      var ubvtemp=2
+      
+    } else {if ((ubvSelector.value=3) {
+      var ubvtemp=3
+    } 
+    else {if ((ubvSelector.value=4)  {
+      var ubvtemp=5
+    } 
+    else {if ((ubvSelector.value=5)  {
+        var ubvtemp=8
+    }
+    else {if ((ubvSelector.value=6)  {
+        var ubvtemp=13
+    }
+    else {if ((ubvSelector.value=7)  {
+        var ubvtemp=21  
+    }
+    else  {
+        var ubvtemp=100  
+          }
+            }
+              }
+                }
     var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)
-  return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 10000).toFixed(2))
+  return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(ubvtemp) * 100) / 100).toFixed(2))
   
   })
   .then(function(){
