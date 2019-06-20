@@ -23,29 +23,15 @@ document.getElementById('save').addEventListener('click', function(){
   })
   .then(function(){
     if (ubvSelector.value=1) {
-      var ubvtemp=1 
+      var ubvtemp=10
     } 
-    if (ubvSelector.value=2) {
-      var ubvtemp=2 
+    else
+      var ubvtemp=20
     } 
-    if (ubvSelector.value=3) {
-      var ubvtemp=3
-    } 
-    if (ubvSelector.value=4)  {
-      var ubvtemp=5
-    } 
-    if (ubvSelector.value=5)  {
-      var ubvtemp=8
-    }
-    if (ubvSelector.value=6)  {
-        var ubvtemp=13
-    }
-    if (ubvSelector.value=7)  {
-        var ubvtemp=32  
-    }
+    
     
   /*  var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
-    var wsjfval=ubvtemp
+    var wsjfval = ubvtemp
   /* return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2)) */
    return t.set('card', 'shared',  'wsjf', wsjfval) 
   
