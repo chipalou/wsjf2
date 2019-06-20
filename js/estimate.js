@@ -44,8 +44,9 @@ document.getElementById('save').addEventListener('click', function(){
         var ubvtemp=21  
     }
     
-    var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)
-  return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(ubvtemp) * 100) / 100).toFixed(2))
+  /*  var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
+    var wsjfval=ubvtemp
+  return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2))
   
   })
   .then(function(){
