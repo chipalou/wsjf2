@@ -23,16 +23,28 @@ document.getElementById('save').addEventListener('click', function(){
   })
   .then(function(){
     if (ubvSelector.value=="1") {
-      var wsjfval= 10
+      var wsjfval= 1
     } 
-    else {
     if (ubvSelector.value=="2") {
-      var wsjfval= 20
+      var wsjfval= 2
     } 
-      else {
-      var wsjfval=30  
-      }
-    }
+     if (ubvSelector.value=="3") {
+      var wsjfval= 3
+    } 
+    if (ubvSelector.value=="5") {
+      var wsjfval= 5
+    } 
+      if (ubvSelector.value=="8") {
+      var wsjfval= 8
+    } 
+      if (ubvSelector.value=="13") {
+      var wsjfval= 13
+    } 
+      if (ubvSelector.value=="21") {
+      var wsjfval= 13
+    } 
+    
+    
     /*var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)*/
     return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2))
    /* var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
