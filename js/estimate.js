@@ -107,7 +107,7 @@ document.getElementById('save').addEventListener('click', function(){
       var jstemp= 21
     } 
     
-    var wsjfval = (ubvtemp+tctemp+rroetemp+jstemp)
+    var wsjfval = ubvtemp
     /*var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)*/
     /* return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2)) */
    /* var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
