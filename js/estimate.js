@@ -22,27 +22,13 @@ document.getElementById('save').addEventListener('click', function(){
     return t.set('card', 'shared',  'js', jsSelector.value)
   })
   .then(function(){
-    if (ubvSelector.value=="1") {
-      var ubvtemp= 1
-    } 
-    if (ubvSelector.value=="2") {
-      var ubvtemp= 2
-    } 
-    if (ubvSelector.value=="3") {
-      var ubvtemp= 3
-    } 
-    if (ubvSelector.value=="4") {
-      var ubvtemp= 5
-    } 
-    if (ubvSelector.value=="5") {
-      var ubvtemp= 8
-    } 
-    if (ubvSelector.value=="6") {
-      var ubvtemp= 13
-    } 
-    if (ubvSelector.value=="7") {
-      var ubvtemp= 21
-    } 
+    if (ubvSelector.value=="1") { var ubvtemp= 1 } 
+    if (ubvSelector.value=="2") { var ubvtemp= 2 } 
+    if (ubvSelector.value=="3") { var ubvtemp= 3 } 
+    if (ubvSelector.value=="4") { var ubvtemp= 5 } 
+    if (ubvSelector.value=="5") { var ubvtemp= 8 } 
+    if (ubvSelector.value=="6") { var ubvtemp= 13 } 
+    if (ubvSelector.value=="7") { var ubvtemp= 21 } 
     
     var wsjfval = ubvtemp
     /*var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)*/
