@@ -23,28 +23,48 @@ document.getElementById('save').addEventListener('click', function(){
   })
   .then(function(){
     if (ubvSelector.value=="1") {
-      var wsjfval= 1
+      var ubvtemp= 1
     } 
     if (ubvSelector.value=="2") {
-      var wsjfval= 2
+      var ubvtemp= 2
     } 
      if (ubvSelector.value=="3") {
-      var wsjfval= 3
+      var ubvtemp= 3
     } 
     if (ubvSelector.value=="4") {
-      var wsjfval= 5
+      var ubvtemp= 5
     } 
       if (ubvSelector.value=="5") {
-      var wsjfval= 8
+      var ubvtemp= 8
     } 
       if (ubvSelector.value=="6") {
-      var wsjfval= 13
+      var ubvtemp= 13
     } 
       if (ubvSelector.value=="7") {
-      var wsjfval= 21
+      var ubvtemp= 21
     } 
-    
-    
+      if (tcSelector.value=="1") {
+      var tctemp= 1
+    } 
+    if (tcSelector.value=="2") {
+      var tctemp = 2
+    } 
+     if (tcSelector.value=="3") {
+      var tctemp= 3
+    } 
+    if (tcSelector.value=="4") {
+      var tctemp= 5
+    } 
+      if (tcSelector.value=="5") {
+      var tctemp= 8
+    } 
+      if (tcSelector.value=="6") {
+      var tctemp= 13
+    } 
+      if (tcSelector.value=="7") {
+      var tctemp= 21
+} 
+    var wsjfval = ubvtemp+tctemp
     /*var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)*/
     /* return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2)) */
    /* var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
