@@ -31,16 +31,16 @@ document.getElementById('save').addEventListener('click', function(){
      if (ubvSelector.value=="3") {
       var wsjfval= 3
     } 
-    if (ubvSelector.value=="5") {
+    if (ubvSelector.value=="4") {
       var wsjfval= 5
     } 
-      if (ubvSelector.value=="8") {
+      if (ubvSelector.value=="5") {
       var wsjfval= 8
     } 
-      if (ubvSelector.value=="13") {
+      if (ubvSelector.value=="6") {
       var wsjfval= 13
     } 
-      if (ubvSelector.value=="21") {
+      if (ubvSelector.value=="7") {
       var wsjfval= 21
     } 
     
