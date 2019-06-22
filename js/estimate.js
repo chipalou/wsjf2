@@ -54,12 +54,12 @@ document.getElementById('save').addEventListener('click', function(){
     if (jsSelector.value=="6") { var jstemp= 13 } 
     if (jsSelector.value=="7") { var jstemp= 21 } 
     
-    /* var wsjfval = ((ubvtemp + tctemp + rroetemp)+ jstemp ) */
+    var wsjfval = ((ubvtemp + tctemp + rroetemp)/ jstemp ) 
     /*var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)*/
     /* return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2)) */
     /* var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
     /* return t.set('card', 'shared',  'wsjf', (Math.round(wsjfval*100)/100)) */
-    return t.set('card', 'shared', 'wsjf', tctemp+rroetemp+jstemp+ubvtemp)
+    return t.set('card', 'shared', 'wsjf', wsjfval)
  
   
   
