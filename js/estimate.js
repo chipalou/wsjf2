@@ -52,8 +52,8 @@ document.getElementById('save').addEventListener('click', function(){
     if (rroeSelector.value=="7") { var rroetemp= 13 } 
     if (rroeSelector.value=="8") { var rroetemp= 21 } 
     
-    if (jsSelector.value=="") { var jstemp= 0 }  
-    if (jsSelector.value=="1") { var jstemp= 0 } 
+    if (jsSelector.value=="") { var jstemp= 0.00001 }  
+    if (jsSelector.value=="1") { var jstemp= 0.00001 } 
     if (jsSelector.value=="2") { var jstemp= 1 } 
     if (jsSelector.value=="3") { var jstemp= 2 } 
     if (jsSelector.value=="4") { var jstemp= 3 } 
