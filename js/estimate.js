@@ -23,7 +23,7 @@ document.getElementById('save').addEventListener('click', function(){
   })
   .then(function(){
     if (ubvSelector.value=="") { var ubvtemp= 0 }  
-    if (ubvSelector.value=="NULL") { var ubvtemp= 0 } 
+    if (ubvSelector.value==" ") { var ubvtemp= 0 } 
     if (ubvSelector.value=="2") { var ubvtemp= 1 } 
     if (ubvSelector.value=="3") { var ubvtemp= 2 } 
     if (ubvSelector.value=="4") { var ubvtemp= 3 } 
