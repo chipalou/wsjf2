@@ -31,7 +31,9 @@ document.getElementById('save').addEventListener('click', function(){
     if (ubvSelector.value=="6") { var ubvtemp= 8 } 
     if (ubvSelector.value=="7") { var ubvtemp= 13 } 
     if (ubvSelector.value=="8") { var ubvtemp= 21 } 
-    
+  
+    if (tcSelector.value=="") { var tctemp= 0 }  
+    if (tcSelector.value==" ") { var tctemp= 0 } 
     if (tcSelector.value=="1") { var tctemp= 1 } 
     if (tcSelector.value=="2") { var tctemp= 2 } 
     if (tcSelector.value=="3") { var tctemp= 3 } 
@@ -40,6 +42,8 @@ document.getElementById('save').addEventListener('click', function(){
     if (tcSelector.value=="6") { var tctemp= 13 } 
     if (tcSelector.value=="7") { var tctemp= 21 } 
     
+   if (rroeSelector.value=="") { var rroetemp= 0 }  
+    if (rroeSelector.value==" ") { var rroetemp= 0 }
     if (rroeSelector.value=="1") { var rroetemp= 1 } 
     if (rroeSelector.value=="2") { var rroetemp= 2 } 
     if (rroeSelector.value=="3") { var rroetemp= 3 } 
@@ -48,6 +52,8 @@ document.getElementById('save').addEventListener('click', function(){
     if (rroeSelector.value=="6") { var rroetemp= 13 } 
     if (rroeSelector.value=="7") { var rroetemp= 21 } 
     
+    if (jsSelector.value=="") { var jstemp= 0 }  
+    if (jsSelector.value==" ") { var jstemp= 0 } 
     if (jsSelector.value=="1") { var jstemp= 1 } 
     if (jsSelector.value=="2") { var jstemp= 2 } 
     if (jsSelector.value=="3") { var jstemp= 3 } 
