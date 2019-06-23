@@ -52,8 +52,8 @@ document.getElementById('save').addEventListener('click', function(){
     if (rroeSelector.value=="7") { var rroetemp= 13 } 
     if (rroeSelector.value=="8") { var rroetemp= 21 } 
     
-    if (jsSelector.value=="") { var jstemp= 0.00001 }  
-    if (jsSelector.value=="1") { var jstemp= 0.00001 } 
+    if (jsSelector.value=="") { var jstemp= 0 }  
+    if (jsSelector.value=="1") { var jstemp= 0 } 
     if (jsSelector.value=="2") { var jstemp= 1 } 
     if (jsSelector.value=="3") { var jstemp= 2 } 
     if (jsSelector.value=="4") { var jstemp= 3 } 
@@ -62,16 +62,18 @@ document.getElementById('save').addEventListener('click', function(){
     if (jsSelector.value=="7") { var jstemp= 13 } 
     if (jsSelector.value=="8") { var jstemp= 21 } 
     
+    /* calcul du wsjf  somme des valeurs divisée par le job size */
     var wsjfval = ((ubvtemp + tctemp + rroetemp)/ jstemp ) 
-    /*var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value)*/
+   
+    /* afficher une valeur arbitraire si le job size n est pas defini ou nul */
+    if (jsSelector.value=="") { var wsjfval=9999 }  
+    if (jsSelector.value=="1") { var wsjfval= 9999 } 
+    
     /* return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 100).toFixed(2)) */
-    /* var wsjfval = ((ubvSelector.value+tcSelector.value+rroeSelector.value)/jsSelector.value) */
     /* return t.set('card', 'shared',  'wsjf', (Math.round(wsjfval*100)/100)) */
+    
     return t.set('card', 'shared', 'wsjf', Math.round(wsjfval*100)/100)
- 
-  
-  
-  })
+   })
   .then(function(){
    
    
